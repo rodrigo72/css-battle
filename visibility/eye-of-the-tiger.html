@@ -1,0 +1,56 @@
+<div id=a class=d></div><div id=b class=d><div id=c class=d>
+    <style>
+      body {
+        background: #0B2429;
+        margin: 50px 0 0 100px;
+      }
+      .d {border-radius: 50%}
+      #a {
+        width: 200;
+        height: 200;
+        transform: rotate(45deg);
+        border-radius: 50% 0 50% 0;
+        background: #998235
+      }
+      #b {
+        width: 140;
+        height: 140;
+        background:#F3AC3C;
+        position: fixed;
+        top: 60;
+        left: 110;
+        border: 20px solid #0B2429
+      }
+      #c {
+        position: fixed;
+        top: 125;
+        right: 175;
+        width: 50;
+        height: 50;
+        background: #0B2429;
+        text-align: center
+      }
+    </style>
+
+<!-- Solução 2:
+
+<div id=a class=d>
+    <style>
+      body {
+        background: #0B2429;
+        margin: 50px 0 0 100px;
+      }
+      .d {border-radius: 50%}
+      #a {
+        width:200;
+        height:200;
+        transform:rotate(45deg);
+        border-radius:50% 0 50% 0;
+        background:radial-gradient(50px circle at 100px 100px,#0B2429 50%, transparent 0),radial-gradient(140px circle at 100px 100px,#F3AC3C 50%, transparent 0),radial-gradient(180px circle at 100px 100px,#0B2429 50%, transparent 0);
+          background-color: #998235
+      }
+    </style> -->
+
+<!-- Solução 3:
+    <p><style>body{background:#0B2429;margin:50 0 0 100}p{width:200;height:200;transform:rotate(45deg);border-radius:50% 0 50% 0;background:radial-gradient(#0b2429 25px,0,#f3ac3c 70px,0,#0b2429 90px,0,#998235)}</style>
+-->
